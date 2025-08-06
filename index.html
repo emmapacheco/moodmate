@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MoodMate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>How are you feeling today?</h1>
+
+  <select id="moodSelector">
+    <option value="">--Select a mood--</option>
+    <option value="happy">Happy 😊</option>
+    <option value="sad">Sad 😢</option>
+    <option value="stressed">Stressed 😫</option>
+    <option value="motivated">Motivated 💪</option>
+  </select>
+
+  <button onclick="getSuggestion()">Get Suggestion</button>
+
+  <div id="musicSuggestion"></div>
+  <div id="journalPrompt"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
