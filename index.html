@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MoodMate</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodMate 🌸</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>How are you feeling today?</h1>
+  <div class="container">
+    <h1>MoodMate 🌸</h1>
+    <div id="moodGrid"></div>
 
-  <select id="moodSelector">
-    <option value="">--Select a mood--</option>
-    <option value="happy">Happy 😊</option>
-    <option value="sad">Sad 😢</option>
-    <option value="stressed">Stressed 😫</option>
-    <option value="motivated">Motivated 💪</option>
-  </select>
+    <div class="custom-mood-container">
+      <input
+        id="customMoodInput"
+        placeholder="Type your mood..."
+        autocomplete="off"
+      />
+      <button id="submitCustomMood">Submit</button>
+    </div>
 
-  <button onclick="getSuggestion()">Get Suggestion</button>
+    <div id="moodDisplay" class="hidden">
+      <h2 id="moodTitle"></h2>
+      <p id="moodMessage"></p>
 
-  <div id="musicSuggestion"></div>
-  <div id="journalPrompt"></div>
+      <div
+        id="youtubeContainer"
+        class="youtube-container"
+        title="Click to play"
+      ></div>
+
+      <iframe
+        id="spotifyEmbed"
+        width="480"
+        height="80"
+        frameborder="0"
+        allow="encrypted-media"
+      ></iframe>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
